@@ -1,0 +1,38 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Path settings ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Define "user-emacs-directory" when Emacs version is older than 23.
+(when (< emacs-major-version 23)
+  (defvar user-emacs-directory "~/.emacs.d"))
+;;-----------------------------------------------------------------------------------------
+;; Set system path for Mac OSX.
+(when (eq system-type 'darwin)
+  (progn
+	(setq exec-path (cons "/usr/local/bin" exec-path))
+	(setenv "PATH"
+			(concat
+			 '"/usr/texbin" ":"
+			 "/usr/local/bin" ":"
+			 (getenv "PATH")))))
+;;-----------------------------------------------------------------------------------------
+;; Define add-to-load-path function
+(defun add-to-load-path (&rest paths)
+  (let (path)
+	(dolist (path paths paths)
+	  (let ((default-directory
+			  (expand-file-name (concat user-emacs-directory path))))
+		(add-to-list 'load-path default-directory)
+		(if (fboundp 'normal-top-level-add-subdirs-to-load-path)
+		    (normal-top-level-add-subdirs-to-load-path))))))
+;;-----------------------------------------------------------------------------------------
+;; Add load-paths
+(add-to-load-path "elisp" "conf" "public_repos")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Load confs ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; System setting (language, charcode,...)
+;(load "00-system")
+;;-----------------------------------------------------------------------------------------
+;;
+(load "01-frame")
+;;-----------------------------------------------------------------------------------------

@@ -6,7 +6,7 @@
 										; Linux font
 	(set-face-attribute 'default nil
 						:family "Andale Mono"
-						:height 100))
+						:height 80))
 										; set ASCII font
 
   (when (eq system-type 'darwin)

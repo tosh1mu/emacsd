@@ -9,6 +9,8 @@
 										; disable scroll-bar
     (tool-bar-mode nil)
 										; disable tool-bar
+	(global-linum-mode t)
+										; show line number
     (unless (eq window-system 'ns)
 										; When not Cocoa-Emacs,
       (menu-bar-mode 0))))
@@ -20,8 +22,6 @@
 										; move scroll-bar to the right side
   )
 ;;-----------------------------------------------------------------------------------------
-(global-linum-mode t)
-										; show line number
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Mode-line settings ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

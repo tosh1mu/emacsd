@@ -3,7 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Define "user-emacs-directory" when Emacs version is older than 23.
 (when (< emacs-major-version 23)
-  (defvar user-emacs-directory "~/.emacs.d"))
+  (defvar user-emacs-directory "~/.emacs.d/"))
 ;;-----------------------------------------------------------------------------------------
 ;; Set system path for Mac OSX.
 (when (eq system-type 'darwin)

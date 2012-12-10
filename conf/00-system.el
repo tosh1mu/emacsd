@@ -11,9 +11,9 @@
 ;;-----------------------------------------------------------------------------------------
 ;; 
 (when (eq system-type 'darwin)
-  (require 'ucs-normalize)
-  (set-file-name-coding-system 'utf-8-hfs)
-  (setq locale-coding-system 'utf-8-hfs))
+  (when (require 'ucs-normalize nil t)
+    (set-file-name-coding-system 'utf-8-hfs)
+    (setq locale-coding-system 'utf-8-hfs)))
 ;;-----------------------------------------------------------------------------------------
 ;;
 (when (eq window-system 'w32)

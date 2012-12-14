@@ -94,7 +94,7 @@
 	  [(20120531 1344)
 	   nil "show wc-like information in status bar [source: wiki]" single])
  (w3m .
-      [(20121205 230)
+      [(20121210 1142)
        nil "an Emacs interface to w3m [source: github]" tar])
  (volatile-highlights .
 		      [(20120215 9)
@@ -263,6 +263,9 @@
  (tabulated-list .
 		 [(20120406 2251)
 		  nil "generic major mode for tabulated lists. [source: github]" single])
+ (systemtap-mode .
+		 [(20121210 10)
+		  nil "A mode for SystemTap [source: github]" single])
  (syntactic-sugar .
 		  [(20121205 1457)
 		   nil "Effect-free forms such as if/then/else [source: github]" single])
@@ -447,7 +450,7 @@
 	  [(20120830 1028)
 	   nil "Mode-specific scratch buffers [source: github]" tar])
  (scala-mode .
-	     [(20121003 1036)
+	     [(20121205 1135)
 	      nil "No description available. [source: github]" tar])
  (save-visited-files .
 		     [(20120615 13)
@@ -578,7 +581,7 @@
 	       [(20120505 1355)
 		nil "outline mode extension for python mode [source: wiki]" single])
  (python .
-	 [(20121014 1458)
+	 [(20121210 1140)
 	  nil "Python's flying circus support for Emacs [source: github]" single])
  (pyregexp .
 	   [(20120919 1909)
@@ -744,7 +747,7 @@
 	  [(20121128 2315)
 	   nil "Show tooltip at point [source: github]" single])
  (popwin .
-	 [(20121111 1453)
+	 [(20121210 2054)
 	  nil "Popup Window Manager. [source: github]" single])
  (popup .
 	[(20121020 1203)
@@ -765,7 +768,7 @@
 		  [(20120403 1455)
 		   nil "Interact with Pivotal Tracker through its API [source: github]" single])
  (php-mode .
-	   [(20121203 1903)
+	   [(20121211 2243)
 	    nil "major mode for editing PHP code [source: github]" single])
  (php+-mode .
 	    [(20121129 1452)
@@ -853,7 +856,7 @@
 	       [(20120721 1825)
 		nil "Toodledo integration for Emacs Org mode [source: github]" tar])
  (org-readme .
-	     [(20121207 1719)
+	     [(20121210 1149)
 	      ((http-post-simple
 		(1 0))
 	       (yaoddmuse
@@ -888,7 +891,7 @@
 	       [(20120202 2334)
 		nil "Org-mode and Cua mode compatibility layer [source: github]" single])
  (org-bullets .
-	      [(20121118 1415)
+	      [(20121210 1548)
 	       nil "Show bullets in org-mode as UTF-8 characters [source: github]" single])
  (openwith .
 	   [(20120531 1636)
@@ -925,7 +928,7 @@
 		     [(20121011 2145)
 		      nil "Tiny functionality enhancements for evaluating sexps. [source: github]" single])
  (nrepl .
-	[(20121205 1643)
+	[(20121210 2029)
 	 ((clojure-mode
 	   (1 11)))
 	 "Client for Clojure nREPL [source: github]" single])
@@ -1206,6 +1209,13 @@
  (jenkins-watch .
 		[(20121004 1726)
 		 nil "Watch continuous integration build status [source: github]" single])
+ (jedi .
+       [(20121211 1223)
+	((epc
+	  (0 1 0))
+	 (auto-complete
+	  (1 4)))
+	"a Python auto-completion for Emacs [source: github]" tar])
  (jaunte .
 	 [(20120212 134)
 	  nil "No description available. [source: github]" single])
@@ -1254,6 +1264,9 @@
  (ignoramus .
 	    [(20121205 1455)
 	     nil "Ignore backups, build files, et al. [source: github]" single])
+ (iflipb .
+	 [(20121210 1935)
+	  nil "interactively flip between recently visited buffers [source: hg]" single])
  (iedit .
 	[(20121208 1644)
 	 nil "Edit multiple regions in the same way simultaneously. [source: github]" tar])
@@ -1277,7 +1290,7 @@
 		[(20120831 1806)
 		 nil "Major mode API client for status.net open microblogging [source: github]" tar])
  (icicles .
-	  [(20121207 1846)
+	  [(20121210 2227)
 	   nil "Minibuffer input completion and cycling. [source: wiki]" tar])
  (ibuffer-vc .
 	     [(20120922 1120)
@@ -1376,7 +1389,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [source: github]" single])
  (helm .
-       [(20121210 718)
+       [(20121212 847)
 	nil "Helm is an Emacs incremental and narrowing framework [source: github]" tar])
  (header2 .
 	  [(20120823 1956)
@@ -1393,7 +1406,7 @@
 	   (1 2)))
 	 "Emacs client for hastebin (http://hastebin.com/about.md) [source: github]" single])
  (haskell-mode .
-	       [(20121122 1312)
+	       [(20121211 1357)
 		nil "A Haskell editing mode [source: github]" tar])
  (hardhat .
 	  [(20121126 1228)
@@ -1429,7 +1442,7 @@
 		    [(20120821 1835)
 		     nil "Mode for the dot-language used by graphviz (att). [source: github]" single])
  (graphene .
-	   [(20121209 1028)
+	   [(20121212 853)
 	    ((auto-complete
 	      (20120909))
 	     (ac-dabbrev
@@ -1712,8 +1725,8 @@
 	 [(20120831 1448)
 	  nil "No description available. [source: github]" tar])
  (ergoemacs-mode .
-		 [(20121206 1331)
-		  nil "A minor mode, a keybinding set based on ergonomics. [source: git]" tar])
+		 [(20121211 2115)
+		  nil "No description available. [source: git]" tar])
  (eredis .
 	 [(20120808 2207)
 	  nil "eredis, a Redis client in emacs lisp [source: svn]" single])

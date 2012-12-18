@@ -9,7 +9,7 @@
 ;; Set prefer-coding-system for all environment
 (prefer-coding-system 'utf-8)
 ;;--------------------------------------------------------------------------------------
-;; 
+;;
 (when (eq system-type 'darwin)
   (when (require 'ucs-normalize nil t)
     (set-file-name-coding-system 'utf-8-hfs)

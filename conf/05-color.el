@@ -38,16 +38,19 @@
 										; 括弧の範囲色
 ;(set-face-background 'region "DimGray")
 										; 選択領域の範囲色
-;(defface my-hl-line-face
+(defface my-hl-line-face
   ;; 背景がdarkならハイライト色を紺に
-;  '((((class color) (background dark))
-;	 (:background "MidnightBlue" t))
-;	;; 背景がlightならハイライト色を緑に
-;	(((class color) (background light))
-;	 (:background "CornflowerBlue" t))
-;	(t (:bold t)))
-;  "hl-line's my face")
-;(setq hl-line-face 'my-hl-line-face)
+  '((((class color) (background dark))
+	 (:background "MidnightBlue" t))
+	;; 背景がlightならハイライト色を緑に
+	(((class color) (background light))
+	 (:background "CornflowerBlue" t))
+	(t (:bold t)))
+  "hl-line's my face")
+(setq hl-line-face 'my-hl-line-face)
+										; 色つき
+;(setq hl-line-face 'underline)
+										; 下線
 (global-hl-line-mode t)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; White-space color settings ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

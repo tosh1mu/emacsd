@@ -52,7 +52,7 @@
 										; enable clipboard of X
 (setq frame-title-format (concat  "%* %b [%f] - emacs@" (system-name)))
 										; default to better frame titles
-(setq-default line-spacing 0.5)
+(setq-default line-spacing 1)
 										; widen line-space
 (setq-default tab-width 4)
 										; set tab width

@@ -50,7 +50,7 @@
 										; set show-paren-style to expression (fill the area of parentheses)
 (setq x-select-enable-clipboard t)
 										; enable clipboard of X
-(setq frame-title-format (concat  "%* [%b] (%f) - emacs@" (system-name)))
+(setq frame-title-format (concat  "%b (%f) %* emacs@" (system-name)))
 										; default to better frame titles
 (setq-default line-spacing 1)
 										; widen line-space

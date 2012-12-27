@@ -24,9 +24,9 @@
   ;; 大人しくC-jを使ったnewline-and-indentを使うほうが
   ;; (define-key c-mode-base-map ""\C-m" 'newline-and-indent)
 
-  (c-set-style "stroustrup")                  ;; スタイルはストラウストラップ
+  (c-set-style "cc-mode")                     ;;
   (flyspell-prog-mode)                        ;; flyspell-prog-mode(自動ispell機能)
-  (show-paren-mode t)                         ;; カッコを強調表示する
+  (show-paren-mode t)                         ;;
 
   ;; 他のエディタなどがファイルを書き換えたらすぐにそれを反映する
   ;; auto-revert-modeを有効にする
@@ -55,6 +55,7 @@
   ;; offsets
   (c-set-offset 'innamespace 0)
   (c-set-offset 'arglist-close 0)
+  (c-set-offset 'comment-intro 0)
   )
 
 (add-hook 'c-mode-common-hook 'set-c-mode-common-conf)

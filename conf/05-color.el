@@ -26,7 +26,7 @@
   (setq default-frame-alist
       (append
        (list
-		'(alpha . (85 75 50 25))
+		'(alpha . (95 75 50 25))
 		)
        default-frame-alist))
   )

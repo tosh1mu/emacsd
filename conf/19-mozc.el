@@ -20,7 +20,7 @@
   ;; mini buffer ではオフに
   (add-hook 'minibuffer-setup-hook 'ibus-disable)
   ;; Keybindings
-  (global-set-key (kbd "C-\\") 'ibus-toggle)
+  ;(global-set-key (kbd "C-\\") 'ibus-toggle)
   ;(global-set-key (kbd "C-o") (lambda () (interactive) (ibus-enable "mozc-jp")))
   (global-set-key (kbd "C-<f7>")
 				  (lambda ()

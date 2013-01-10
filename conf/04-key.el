@@ -3,8 +3,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (when (eq system-type 'darwin)
   (setq mac-option-modifier 'meta)
+  										; define "Option" key on Mac as meta key
   )
-										; define "Option" key on Mac as meta key
 (global-set-key (kbd "C-h") 'backward-delete-char)
 										; BackSpace
 (global-set-key (kbd "C-c l") 'toggle-truncate-lines)

@@ -35,4 +35,11 @@
 	  (setq tpos 50)
 	  (set-frame-size (selected-frame) fwidth fheight)
 	  (set-frame-position (selected-frame) lpos tpos)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Tak-PC ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   ((equal system-name "Tak-PC")
+	(progn
+	  (set-frame-size (selected-frame) 100 50)
+	  (set-frame-position (selected-frame) 20 40)))
 ))

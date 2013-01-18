@@ -2,15 +2,8 @@
 ; ASCII Font settings ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (when window-system
-  (when (eq system-type 'gnu/linux)
-										; Linux font
-	(set-face-attribute 'default nil
-						:family "Andale Mono"
-						:height 80))
-										; set ASCII font
-
-   (when (and (eq system-type 'darwin) (>= emacs-major-version 23))
-										; MaxOSX font
+  ;; MacOSX Font
+  (when (and (eq system-type 'darwin) (>= emacs-major-version 23))
 	 (set-face-attribute 'default nil
 						 :family "Monaco"
 						 :height 120)
@@ -35,4 +28,15 @@
 			 (".*monaco cy-bold-.*-mac-cyrillic" . 0.9)
 			 (".*monaco-bold-.*-mac-roman" . 0.9)
 			 ("-cdac$" . 1.3))))
-)
+  ;; Linux Font
+  (when (eq system-type 'gnu/linux)
+	(set-face-attribute 'default nil
+						:family "Andale Mono"
+						:height 80))
+										; set ASCII font
+  ;; Windows Font
+  (when (eq system-type 'windows-nt)
+	(set-face-attribute 'default nil
+						:family "IPAゴシック"
+						:height 100))
+  )

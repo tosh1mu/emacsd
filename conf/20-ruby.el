@@ -19,12 +19,12 @@
     (set-face-foreground font-lock-type-face "LightSeaGreen"))
 )
 
-(global-font-lock-mode 1)
-(setq default-frame-alist (append '(
-  (foreground-color . "gray")  ;
-  (background-color . "black") ;
-  (cursor-color     . "blue")  ;
-) default-frame-alist))
+;(global-font-lock-mode 1)
+;(setq default-frame-alist (append '(
+;  (foreground-color . "gray")  ;
+;  (background-color . "black") ;
+;  (cursor-color     . "blue")  ;
+;) default-frame-alist))
 
 ;; ruby-mode indent
 (setq ruby-deep-indent-paren-style nil)
